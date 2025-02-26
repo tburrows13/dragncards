@@ -104,6 +104,7 @@ const InputBox = ({
       className="mb-2 rounded-md" 
       placeholder=" Deck name..." 
       value={searchString}
+      spellcheck="false"
       onChange={(event) => handleSpawnTyping(event)}
       onFocus={() => dispatch(setTyping(true))}
       onBlur={() => dispatch(setTyping(false))}/>

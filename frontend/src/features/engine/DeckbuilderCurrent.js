@@ -153,6 +153,7 @@ export const DeckbuilderCurrent = React.memo(({
               className="rounded w-full text-black" 
               placeholder={"Deck Name"}
               value={currentDeck.name}
+              spellcheck="false"
               onChange={(event) => setCurrentDeck({...currentDeck, name: event.target.value})}/>       
           </div>
           <div className="flex justify-center">

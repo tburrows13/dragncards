@@ -241,7 +241,8 @@ export const Browse = React.memo(({}) => {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Search.."
+                placeholder="Search..."
+                spellcheck="false"
                 className="form-control w-full bg-gray-900 text-white border-0 h-full px-1"
                 onFocus={event => dispatch(setTyping(true))}
                 onBlur={event => dispatch(setTyping(false))}

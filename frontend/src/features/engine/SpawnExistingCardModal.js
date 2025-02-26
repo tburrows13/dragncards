@@ -96,6 +96,7 @@ export const SpawnExistingCardModal = React.memo(({}) => {
           name="name" 
           className="mb-6 mt-5 rounded" 
           placeholder=" Card name..." 
+          spellcheck="false"
           onChange={handleSpawnTyping}
           onFocus={event => dispatch(setTyping(true))}
           onBlur={event => dispatch(setTyping(false))}/>

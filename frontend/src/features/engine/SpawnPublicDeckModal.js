@@ -178,6 +178,7 @@ const Table = React.memo(({}) => {
                         className="m-2 rounded" 
                         placeholder={"Filter " + gameL10n(colDetails.label)} 
                         value={filters[colDetails.propName] || ""}
+                        spellcheck="false"
                         onChange={(event) => handleFilterTyping(event, colDetails.propName)}
                       />
                     </div>
